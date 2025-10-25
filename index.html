@@ -6,7 +6,24 @@
   <title>Redirect...</title>
 </head>
 <body>
-  <p>Przekierowuję… jeśli nic się nie dzieje, kliknij <a id="link" href="#">tutaj</a>.</p>
+    <style>
+    body {
+      background-color: #f5f1e6; /* delikatny beż */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    img {
+      max-width: 80%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+  </style>
   <script>
     fetch('target.txt', {cache: "no-store"})
       .then(r => {
@@ -31,3 +48,4 @@
   </script>
 </body>
 </html>
+
